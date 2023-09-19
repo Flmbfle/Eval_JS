@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercice 3 JavaScript</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <script src="assets/js/exercice1.js"></script>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html" class="nav-item">Accueil</a></li>
+        </ul>
+    </nav>
+    <main class="main3">
+    <div>
+        <h1>Gestion de prénoms</h1> <!--Titre-->
+
+        <div class="ex3-content">
+            <label for="prenomInput">Prénom : </label>
+            <input type="text" id="prenomInput" placeholder="Entrez un prénom"><br>
+            
+            <button onclick="ajouterPrenom()">Ajouter</button>
+            <button onclick="supprimerPrenom()">Supprimer</button>
+        </div>
+        <h2>Liste des prénoms</h2>
+
+        <ul id="listePrenoms">
+            <!-- La liste des prénoms sera affichée ici -->
+        </ul>
+            <p id="messageAjout"></p>
+            <p id="messageSuppression"></p>
+        
+    </div>
+    </main>
+    <script src="assets/js/exercice3.js"></script>
 </body>
 </html>
